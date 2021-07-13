@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>PassbookQR</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <!-- <link rel="stylesheet" href="css/base.css"> -->
+    <link rel="stylesheet" href="css/pbqr.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker3.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/line-awesome.css">    
+    <!-- favicons
+    ================================================== -->
+    <!-- <link rel="shortcut icon" href="images/shortcut-logo.png" type="image/x-icon"> -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    
+    <!-- bismillah -->
+
+    <!-- loading -->
+    <div class="pbq-loadingpage">
+        <span class="loadinganimate"></span>
+    </div>
+    <!---->
+
+    <div class="pbq-main-v2">
+        <h1>Tabungan Autosave</h1>
+        <div class="pbq-maincolor">
+            <p>
+                Note tambahan untuk sub title 
+            </p>
+            <h2>
+                Masukan nomor rekening anda dibawah ini
+            </h2>
+            <h2>
+                Masukan nomor rekening anda dibawah ini
+                <i class="la la-home"></i>
+            </h2>
+        </div>
+    </div>
+
+    <div class="pbq-mbox-l1 container">
+        <div class="pbq-mbox-l2">
+            <nav class="pbq-nav-l1 fixed-top">
+                <div class="pbq-nav-ctrl float-left text-left">
+                    <!-- <a>
+                        <i class="la la-arrow-left"></i>
+                    </a> -->
+                </div> <!-- end pbq-nav-ctrl -->
+                <div class="pbq-nav-title">
+                    <h3>
+                        Div BSI User page 
+                    </h3>
+                </div> <!-- end pbq-navtitle -->
+                <div class="pbq-nav-ctrl float-right text-right">
+                    <!-- <a>
+                        <i class="la la-download"></i>
+                    </a> -->
+                </div> <!-- end pbq-nav-ctrl -->
+            </nav> <!-- end pbq-nav-l1 -->  
+            <div class="pbq-contm-l1">
+                <h5 class="pbq-ttl-cont">
+                    Silahkan masukan “Kode OTP” yang dikirimkan melalui SMS ke nomor : 
+                    <b class="mc-font">08123456789</b>
+                </h5>
+                <form class="pbq-frm-otp">
+                    <div class="form-group mb-4">
+                        <input type="text" class="form-control" id="InpOtp" placeholder="Masukan OTP" autocomplete="off" maxlength="6">
+                    </div>
+                    <div class="pbq-reqbtn">
+                        <h6>
+                            Tidak mendapatkan kode OTP ?
+                        </h6>
+                        <h5 class="pbq-timereq"></h5>
+                        <button type="button" onclick="reqOTP()" class="req-bt" style="display: none;"> <!-- note : saat hitungan mundur belum selesai, tambah class "disable"-->
+                            <i class="bt-ic la la-sms"></i>
+                            Kirim ulang kode otp 
+                            <span>00:59</span>
+                            <i class="bt-arr la la-angle-right"></i>
+                        </button>
+                    </div> 
+                    <div class="pbq-mainbtn fixed-bottom">
+                        <button type="button" onclick="window.location.href='mutasi-list.html'" class="bt-val main-bt">Konfirmasi</button>
+                    </div>
+                </form>
+                <!--  -->
+            <div id="snack_reqotp" class="pbq-snack snack-scs">
+                <i class="la la-info-circle"></i>
+                Kode OTP berhasil dikirim
+            </div>
+            <!--  -->
+            </div> <!-- end pbq-contm-l1 -->
+        </div> <!-- end pbq-mbox-l2 -->
+    </div> <!-- end pbq-mbox container -->
+
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Genose | Satulink</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <!-- <link rel="stylesheet" href="css/base.css"> -->
+    <link rel="stylesheet" href="css/pbqr.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker3.css">
+    <link rel="stylesheet" href="css/genose.css">
+    <link rel="stylesheet" href="css/line-awesome.css">    
+    <!-- favicons
+    ================================================== -->
+    <!-- <link rel="shortcut icon" href="images/shortcut-logo.png" type="image/x-icon"> -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    
+    <!-- bismillah -->
+
+    <!-- loading -->
+    <div class="gns-loadingpage">
+        <span class="loadinganimate"></span>
+    </div>
+    <!---->
+
+    <div class="gns-mbox-l1">
+        <div class="gns-mbox-l2">
+            <nav class="gns-nav-l1 fixed-top">
+                <div class="gns-nav-logo float-left">
+                    <img src="img/hlogo.png">
+                </div> <!-- end gns-nav-ctrl -->
+            </nav> <!-- end gns-nav-l1 -->  
+            <div class="gns-contm-l1">
+                <div class="gns-contm-main int-form">
+                    <h3 class="title">
+                        Selamat Datang di Pemeriksaan COVID-19 Satulink
+                    </h3>
+                    <p class="labelcont">
+                        Silahkan lengkapi form dibawah ini
+                    </p>
+                </div>
+            </div> <!-- end gns-contm-l1 -->
+
+            <div class="gns-contm-l1">
+                <div class="gns-contm-main int-form">
+                    <form>
+                        <div class="form-group">
+                            <label>
+                                Nomor Hp
+                            </label>
+                            <input type="text" class="form-control" name="" placeholder="Masukan nomor hp">
+                            <label class="mt-4">
+                                Alamat email
+                            </label>
+                              <input type="email" class="form-control" name="" placeholder="Masukan email anda">
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                Nama Lengkap
+                            </label>
+                              <input type="email" class="form-control" name="" placeholder="Masukan nama lengkap">
+                            <label class="mt-4">
+                                Nomor Identitas (KTP)
+                            </label>
+                            <input type="text" class="form-control" name="" placeholder="Masukan nomor identitas KTP">
+                            <label class="mt-4">
+                                Tanggal Lahir (Sesuai KTP)
+                            </label>
+                            <div class="input-group">
+                                <select class="form-control">
+                                    <option>Tanggal</option>
+                                    <option>01</option>
+                                    <option>02</option>
+                                    <option>03</option>
+                                </select>
+                                <select class="form-control">
+                                    <option>Bulan</option>
+                                    <option>01</option>
+                                    <option>02</option>
+                                    <option>03</option>
+                                </select>
+                                <select class="form-control">
+                                    <option>Tahun</option>
+                                    <option>1990</option>
+                                    <option>1991</option>
+                                    <option>1992</option>
+                                </select>
+                            </div>
+                            <label class="mt-4">
+                               Alamat (Sesuai KTP)
+                            </label>
+                            <textarea class="form-control" placeholder="Masukan alamat"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="lbl-v1">
+                              Tipe test
+                            </label>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="lp_1_1" name="rd_p1">
+                                <label class="custom-control-label" for="lp_1_1">
+                                    Walk In
+                                </label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="lp_1_2" name="rd_p1">
+                                <label class="custom-control-label" for="lp_1_2">
+                                    Drive Thru
+                                </label>
+                            </div>
+                        </div> <!-- end form group -->
+                        <div class="form-group">
+                            <label class="lbl-v1">
+                              Jenis Pemeriksaan
+                          </label>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="jp_1_1" name="rd_p2">
+                                <label class="custom-control-label" for="jp_1_1">
+                                    ANTIGEN ABBOT PANBIO
+                                </label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="jp_1_2" name="rd_p2">
+                                <label class="custom-control-label" for="jp_1_2">
+                                    ANTIGEN STANDARD
+                                </label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="jp_1_3" name="rd_p2">
+                                <label class="custom-control-label" for="jp_1_3">
+                                    PCR SWAB 16 JAM
+                                </label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="jp_1_4" name="rd_p2">
+                                <label class="custom-control-label" for="jp_1_4">
+                                    PCR SWAB 6 JAM
+                                </label>
+                            </div>
+                        </div> <!-- end form group -->
+                        <div class="form-group">
+                            <label class="lbl-v1">
+                                Tanggal Permintaan
+                            </label>
+                            <div class="input-group">
+                                <select class="form-control">
+                                    <option>Tanggal</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                                <select class="form-control">
+                                    <option>Bulan</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                                <select class="form-control">
+                                    <option selected="">2021</option>
+                                </select>
+                            </div>
+                        </div><!-- end form group -->
+                        <div class="est-b">
+                            <table class="table">
+                                <tr>
+                                    <td>
+                                        Estimasi Biaya PCR
+                                    </td>
+                                    <td>
+                                        <b>
+                                            IDR 240,000
+                                        </b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <small>
+                                            * Biaya sudah termasuk pajak 10%
+                                        </small>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div> <!-- end form group -->
+                    </form>
+                </div>
+            </div> <!-- end gns-contm-l1 -->
+
+            <div class="gns-contm-btn">
+                <!-- <button class="button btn-back float-left">
+                    Kembali 
+                </button> -->
+                <button type="button" onclick="window.location.href='rgst-stp2.html'" class="button float-right w-100">
+                    Selanjutnya
+                </button>
+            </div>
+
+        </div> <!-- end gns-mbox-l2 -->
+
+        <div class="gns-cprg">
+            2021 | SLI GeNose
+        </div>
+
+    </div> <!-- end gns-mbox container -->
+
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
